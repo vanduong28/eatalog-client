@@ -1,0 +1,12 @@
+{{#each model as |restaurant| }}
+ <div>
+   <p>Name: {{restaurant.name}}</p>
+   <p>City: {{restaurant.city}}</p>
+   <p>Cuisine: {{restaurant.cuisine}}</p>
+   <p>Neighborhood: {{restaurant.neighborhood}}</p>
+   <p>Date Dined: {{restaurant.date_dined}}</p>
+   <p>Notes: {{restaurant.notes}}</p>
+   <button class="btn-default" {{action 'update'}}>Update</button>
+   <button class="btn-danger" {{action 'delete'}}>Delete</button>
+ </div>
+{{/each}}
