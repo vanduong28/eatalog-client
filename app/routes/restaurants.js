@@ -3,5 +3,11 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   model() {
     return this.get('store').findAll('restaurant')
+  },
+  actions: {
+    deleteRestaurant(restaurant) {
+      console.log('inside delete route')
+      restaurant.destroyRecord()
+    }
   }
 });
