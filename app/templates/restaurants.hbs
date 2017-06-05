@@ -1,6 +1,11 @@
+{{!-- <form {{action 'create' on='submit'}}>
+  {{input placeholder='Restaurant name' value=newRestaurant.name}}
+</form> --}}
+
 {{#each model as |restaurant| }}
  {{restaurant-list
    restaurant=restaurant
    deleteRestaurant='deleteRestaurant'
+   createRestaurant='createRestaurant'
  }}
 {{/each}}

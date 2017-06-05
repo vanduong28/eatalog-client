@@ -1,3 +1,13 @@
+<form {{action 'create' on='submit'}}>
+  {{input placeholder='Restaurant name' value=newRestaurant.name}}
+  {{input placeholder='City' value=newRestaurant.city}}
+  {{input placeholder='Cuisine' value=newRestaurant.cuisine}}
+  {{input placeholder='Neighborhood' value=newRestaurant.neighborhood}}
+  {{input placeholder='Date Dined' value=newRestaurant.date_dined}}
+  {{input placeholder='Notes' value=newRestaurant.notes}}
+  <button type="submit">Add</button>
+</form>
+
 <div>
   <p>Name: {{restaurant.name}}</p>
   <p>City: {{restaurant.city}}</p>
